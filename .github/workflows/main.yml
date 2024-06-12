@@ -1,9 +1,13 @@
 name: test_gcd
 on: [push]
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Checkout
-      uses: action/checkout@v4
-    -name: Run tests
-      run: ./test_gcd.bash
+  example-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        run: action/checkout@v4
+        env:
+          POSTGRES_HOST: postgres
+          POSTGRES_PORT: 5432
+      - name: Run tests
+        run: ./test_gcd.bash
