@@ -1,11 +1,9 @@
 name: test_gcd
 on: [push]
 jobs:
- io:test:
- name: test gcd
- runs-on: ubuntu-latest
- steps:
- - name: Checkout
-  uses: action/checkout@v4
- -name: Run tests
-  run: ./test_gcd.bash
+  runs-on: ubuntu-latest
+  steps:
+    - name: Checkout
+      uses: action/checkout@v4
+    -name: Run tests
+      run: ./test_gcd.bash
