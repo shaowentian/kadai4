@@ -23,7 +23,7 @@ echo "Running tests..."
 
 # 正常な入力
 run_test "最大公約数は 6 です。" 48 18
-run_test "最大公約数は 1 です。" 7 14
+run_test "最大公約数は 1 です。" 7 3
 run_test "最大公約数は 12 です。" 60 48
 
 # エラーケース
