@@ -6,8 +6,5 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        env:
-          POSTGRES_HOST: postgres
-          POSTGRES_PORT: 5432
       - name: Run tests
         run: ./test_gcd.bash
